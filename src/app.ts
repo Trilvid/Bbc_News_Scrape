@@ -14,7 +14,8 @@ app.use(morgan("dev"))
 app.use('/api', route)
 
 
-const DB = "mongodb://localhost:27017/BBC"
+// const DB = "mongodb://localhost:27017/BBC"
+const DB = 'mongodb+srv://trilvid:candbf1cd9@cluster0.ivut56z.mongodb.net/?retryWrites=true&w=majority'
 mongoose.set('strictQuery', false);
 mongoose.connect(DB).then(() => console.log('Database is connected'))
 
